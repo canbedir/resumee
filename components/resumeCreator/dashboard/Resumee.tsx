@@ -34,8 +34,8 @@ export const Resumee: React.FC<ResumeeProps> = ({ resume }) => {
           {resume.createInfo.isUpdated ? "Updated " : "Created "}
           {moment(resume.createInfo.date).format("DD MMMM, HH:mm")}
         </p>
-        <button onClick={() => dispatch(deleteResume(resume.id))}>
-          DELETE_RESUME
+        <button className="mt-2 p-2 rounded-md bg-[#ff0f0f] text-white" onClick={() => dispatch(deleteResume(resume.id))}>
+          Delete Resume
         </button>
       </div>
     </div>
