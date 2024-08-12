@@ -20,7 +20,7 @@ export const Resumee: React.FC<ResumeeProps> = ({ resume }) => {
   return (
     <div key={resume.id} className="flex justify-center sm:justify-start gap-3">
       <Link href={`resumebuilder/${resume.id}`}>
-        <a className="h-[200px] sm:h-52 md:h-60 w-36 md:w-44 sm:h-40 relative">
+        <a className="h-[200px] md:h-60 w-36 md:w-44 sm:h-40 relative">
           <Image
             src="/dashboard/InitialSkeletonResumee.svg"
             layout="fill"
